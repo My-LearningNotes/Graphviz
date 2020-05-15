@@ -34,6 +34,8 @@ master_doc = 'index'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    # 开启graphviz插件
+    'sphinx.ext.graphviz'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -65,3 +67,18 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 #
 #html_static_path = ['_static']
+
+
+# -- Options for Graphviz ----------------------------------------------------
+
+# 设置graphviz_dot路径
+graphviz_dot = 'dot'
+
+# 设置graphviz_dot_args，这里设置了默认字体
+graphviz_dot_args = ['-Gfontname=Georgia',
+                     '-Nfontname=Georgia',
+                     '-Efontname=Georgia']
+
+# 输出格式, 默认png, 这里使用svg矢量图
+graphviz_output_format = 'svg'
+
