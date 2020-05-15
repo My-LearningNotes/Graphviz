@@ -10,3 +10,5 @@ Graphviz笔记
     :maxdepth: 2
     :caption: Contents:
 
+    tutorial/index
+
